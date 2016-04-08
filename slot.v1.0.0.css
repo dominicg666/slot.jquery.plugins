@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 6, 2016, 1:30:02 PM
+    Author     : Dominic George
+    site       : dreamidea.in
+*/
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+
+.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            font-family: 'Cabin', sans-serif;
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65) !important; /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+        .pure-button-disabled{
+                border: 0;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    cursor: not-allowed !important;
+    box-shadow: none;
+     pointer-events: none;
+   cursor: default;
+        }
+        .f-foo{
+             font-family: 'Cabin', sans-serif;
+            color: #000;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+       
+    
+
+@media only screen and (min-width: 500px) {
+   
+
+.ui-slot{
+    clear: both;
+    display: block;
+        float: left;
+  padding: 4px;
+  margin-top: 1px;
+  z-index: 99999 !important;
+  border-radius: 2px;
+  height: auto !important;
+   position: relative;
+}
+.rows-slot{
+      float: left;
+        
+      
+}
+.ui-slot-c{
+    clear: both;
+     display: block;
+         
+        margin-top: 10px;
+    margin-bottom: 20px;
+     
+     position: relative;
+}
+.ui-slot-r {
+    font-family: 'Cabin', sans-serif;
+        background-color: #eee;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    min-width: 40px !important;
+    line-height: 30px;
+    padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+}
+.ui-slot-r:hover{
+    background-color: #48c5ff;
+}
+.ui-slot-tf{
+     font-family: 'Cabin', sans-serif;
+     background-color: #ddd;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    line-height: 30px;
+    padding: 7px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px #DDD;
+	border-radius:2px;
+}
+.tf-row {
+      clear: both;
+     display: block;
+     margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.lf-cl{
+    float: left;
+    margin-right: 10px;
+}
+.ui-slot-cl{
+    display: table;
+    margin: 0 auto;
+}
+hr{
+  clear: both;
+    display: block;  
+      border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(90, 163, 230, 0), rgba(29, 77, 122, 0.75), rgba(90, 163, 230, 0)); 
+}
+.ui-slot-cl > .tf-row {
+    display: none;
+}
+}
+@media only screen and (max-width: 499px) {
+    
+.ui-slot{
+    clear: both;
+    display: block;
+  padding: 4px;
+  margin-top: 1px;
+  z-index: 99999 !important;
+  border-radius: 2px;
+  height: auto !important;
+   position: relative;
+}
+.rows-slot{
+      float: left;
+        
+      
+}
+.ui-slot-c{
+         display: block;
+        margin-top: 10px;
+    margin-bottom: 20px;
+     
+     position: relative;
+}
+.ui-slot-r {
+     font-family: 'Cabin', sans-serif;
+        background-color: #eee;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    min-width: 40px !important;
+    line-height: 42px;
+    padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+}
+.ui-slot-r:hover{
+    background-color: #48c5ff;
+}
+.ui-slot-tf{
+     font-family: 'Cabin', sans-serif;
+    min-width:100% ;
+     background:linear-gradient(to bottom, #eee , #58c0c7);
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 40px;
+    line-height: 30px;
+    padding: 7px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px #DDD;
+	border-radius:2px;
+        margin-left: 4px;
+}
+.tf-row {
+    
+      clear: both;
+     display: block;
+   /*margin: 0 auto;*/
+   width:100%;
+     margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.lf-cl{
+    display: none;
+}
+.ui-slot-cl{
+     clear: both;
+     display: block;
+      border-bottom:1px solid #004686;
+     position: relative;
+    
+     
+}
+hr{
+  display: none;
+}
+}

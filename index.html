@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Slot plugins</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="slot.v1.0.0.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="slot.v1.0.0.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+
+    // attach the plugin to an element
+    $('#slot').slot({backColor:'#fff',
+        series:[{
+                colum_id:'24',
+                name:'A1',
+                color:'green',
+                data:[{name:100},{name:101},{name:102},{name:103},{name:104},{name:105},{name:106},{name:107},{name:108}]
+                
+        },{
+                colum_id:'12',
+                name:'A2',
+                data:[{name:200,color:'red'},{name:201,disabled:true,},{name:202},{name:203},{name:204}]
+            },{
+                colum_id:'15',
+                name:'A5',
+                data:[{name:300,},{name:301,disabled:true,},{name:302},{name:303},{name:304},{name:305}]
+            },
+        ],
+        
+            SlotClick: function(index,data,selected) {
+          //  console.log(data);
+          //   console.log(selected);
+             //console.log(index);
+       // alert(result.data.name);
+    },
+   
+   serializeClick:function (index,selected){
+       console.log(selected);
+   },
+   fontSize:'1em', });
+
+    // call a public method
+  //$('#slot').data('slot').foo_public_method();
+
+    // get the value of a property
+            //$('#slot').data('slot').settings.foo;
+
+});
+        </script>
+    </head>
+    <body>
+        <input type="text" id="ser_input" />
+        <slot_canvas id="slot"></slot_canvas>
+      <!--  <div id="slot1" style="width:500px;">
+            <lf class="lf-cl"><tf-row class="tf-row"><tf class="ui-slot-tf">Ai</tf> </tf-row>
+                <tf-row class="tf-row"><tf class="ui-slot-tf">gv</tf></tf-row>
+                <tf-row class="tf-row"> <tf class="ui-slot-tf">sg</tf> </tf-row>
+                  <tf-row class="tf-row"><tf class="ui-slot-tf">gv</tf></tf-row>
+                <tf-row class="tf-row"> <tf class="ui-slot-tf">sg</tf> </tf-row>
+            </lf>
+            <rows-slot class="rows-slot">
+            <c class="ui-slot-c"> <cl class="ui-slot-cl"> <r class="ui-slot-r">46</r> <r class="ui-slot-r">47</r> <r class="ui-slot-r">47</r> </cl> </c>
+            <c class="ui-slot-c">  <cl class="ui-slot-cl"> <r class="ui-slot-r">47</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r></cl> </c>
+            <c class="ui-slot-c">  <cl class="ui-slot-cl"><r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r></cl> </c>
+            <c class="ui-slot-c">  <cl class="ui-slot-cl"> <r class="ui-slot-r">47</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r></cl> </c>
+            <c class="ui-slot-c">  <cl class="ui-slot-cl"><r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r> <r class="ui-slot-r">58</r></cl> </c>
+            </rows-slot>
+            <rf></rf>
+        </div>-->
+    </body>
+</html>
+
+ 

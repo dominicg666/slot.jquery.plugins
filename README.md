@@ -1,8 +1,8 @@
 # slot.jquery.v1.0.0
 slot graph
 
-<link href="//dreamidea.in/plugins/slot/slot.v1.0.0.css" rel="stylesheet" type="text/css" />
-<script src="//dreamidea.in/plugins/slot/slot.v1.0.0.js"></script>
+<link href="slot.v1.0.0.css" rel="stylesheet" type="text/css" />
+<script src="slot.v1.0.0.js"></script>
  <script>
             $(document).ready(function() {
     // attach the plugin to an element

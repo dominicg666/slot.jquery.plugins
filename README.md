@@ -1,11 +1,6 @@
 # slot.jquery.v1.0.0
 slot graph
 
-<html>
-    <head>
-        <title>Slot plugins</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="//dreamidea.in/plugins/slot/slot.v1.0.0.css" rel="stylesheet" type="text/css" />
 <script src="//dreamidea.in/plugins/slot/slot.v1.0.0.js"></script>
  <script>
@@ -31,11 +26,9 @@ slot graph
 });
         </script>
 
-</head>
-    <body>
+
         <slot_canvas id="slot"></slot_canvas>
-    </body>
-</html>
+  
 
 
 <h3>Events</h3>

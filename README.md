@@ -1,12 +1,15 @@
 # slot.jquery.v1.0.0
 slot graph
 
+<html>
+    <head>
+        <title>Slot plugins</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="//dreamidea.in/plugins/slot/slot.v1.0.0.css" rel="stylesheet" type="text/css" />
 <script src="//dreamidea.in/plugins/slot/slot.v1.0.0.js"></script>
-
  <script>
             $(document).ready(function() {
-
     // attach the plugin to an element
     $('#slot').slot({backColor:'#fff',
         series:[{
@@ -15,8 +18,7 @@ slot graph
                 color:'green',
                 data:[{name:100},{name:101},{name:102},{name:103},{name:104},{name:105},{name:106},{name:107},{name:108}]
                 
-        },{
-                colum_id:'12',
+        },{  colum_id:'12',
                 name:'A2',
                 data:[{name:200,color:'red'},{name:201,disabled:true,},{name:202},{name:203},{name:204}]
             },{
@@ -25,13 +27,15 @@ slot graph
                 data:[{name:300,},{name:301,disabled:true,},{name:302},{name:303},{name:304},{name:305}]
             },
         ],
-        
            fontSize:'1em', });
-
-    
-
 });
         </script>
+
+</head>
+    <body>
+        <slot_canvas id="slot"></slot_canvas>
+    </body>
+</html>
 
 
 <h3>Events</h3>
